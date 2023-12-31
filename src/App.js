@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function ObjectState() {
 
@@ -166,6 +166,26 @@ export function AppFunction() {
       <TasksList allTasks={allTasks} handleDelete={handleDelete} />
     </main>
   );
+}
+
+export function Counter() {
+  const [click, setClick] = useState(0);
+
+  const increment = () => {
+    setClick(prev => prev + 1);
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', increment);
+    return () => {
+      document.removeEventListener('mousedown', increment);
+    };
+  });
+
+  return (
+    <h1>Document Clicks: {click}</h1>
+  )
+
 }
 
 

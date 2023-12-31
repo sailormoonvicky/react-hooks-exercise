@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ObjectState, {EditProfile, AppFunction} from './App';
+import ObjectState, {EditProfile, AppFunction, Counter} from './App';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -11,6 +11,7 @@ root.render(
     <ObjectState />
     <EditProfile />
     <AppFunction />
+    <Counter />
   </React.StrictMode>
 );
 
