@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React State
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+Small exercises for React state.
 
 ## Available Scripts
 
