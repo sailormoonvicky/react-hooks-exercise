@@ -2,7 +2,7 @@
 
 ## Description
 
-Small exercises for React state.
+Small exercises for React hooks: state and effect.
 
 ## Available Scripts
 
